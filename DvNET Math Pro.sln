@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DvNET Math Pro", "DvNET Math Pro.csproj", "{2614A04D-7E93-4827-80C9-D0019FB42CB8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DvNET.Math.Core", "DvNET MATH PRO - Core Lib\DvNET.Math.Core.csproj", "{78FE8948-2416-4BCC-B1F0-9F59C279396E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DvNET.Math.Core", "DvNET.Math.Core.csproj", "{78FE8948-2416-4BCC-B1F0-9F59C279396E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
