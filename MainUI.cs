@@ -38,11 +38,6 @@ namespace DvNET_Math_Pro
 
         private void MainUI_Load(object sender, EventArgs e)
         {
-            LoadTimer.Enabled = true;
-        }
-        private void LoadTimer_Tick(object sender, EventArgs e)
-        {
-            if (this.Opacity < 90) { this.Opacity += 1; } else { LoadTimer.Enabled = false; }
         }
         private void Title_MouseDown(object sender, MouseEventArgs e)
         {
@@ -457,6 +452,11 @@ namespace DvNET_Math_Pro
                     result = Sci.Force(num1,num2);
                     Print(">>> Force : " + result.ToString());
                 }
+                else if (operation == "Rforce")
+                {
+                    result = Sci.RForce(num1, num2,num3);
+                    Print(">>> Resultant Force : " + result.ToString());
+                }
                 xSubmit();
             }
             catch (Exception) { Print(Main.InputSubmitError()); }
@@ -539,6 +539,16 @@ namespace DvNET_Math_Pro
             InputTextLabel1.Text = "Mass    :";
             InputTextLabel2.Text = "Gravity :";
             InputTextLabel3.Text = "------- :";
+            InputTextLabel4.Text = "------- :";
+            Submit();
+        }
+
+        private void RForce_Click(object sender, EventArgs e)
+        {
+            operation = "Rforce";
+            InputTextLabel1.Text = "Force 1 :";
+            InputTextLabel2.Text = "Force 2 :";
+            InputTextLabel3.Text = "Theeta  :";
             InputTextLabel4.Text = "------- :";
             Submit();
         }

@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About));
             this.CopyrigthLabel = new System.Windows.Forms.Label();
             this.UPTOWN = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -43,10 +45,6 @@
             this.Title = new System.Windows.Forms.Label();
             this.DvNET = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.Loader = new System.Windows.Forms.Timer(this.components);
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -87,6 +85,30 @@
             this.UPTOWN.Size = new System.Drawing.Size(675, 275);
             this.UPTOWN.TabIndex = 1;
             // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
+            this.label9.Location = new System.Drawing.Point(0, -31);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(675, 40);
+            this.label9.TabIndex = 9;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
+            this.label8.Location = new System.Drawing.Point(-33, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(41, 275);
+            this.label8.TabIndex = 8;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
+            this.label7.Location = new System.Drawing.Point(666, -3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(41, 275);
+            this.label7.TabIndex = 7;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -96,7 +118,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(261, 20);
             this.label6.TabIndex = 6;
-            this.label6.Text = "#Built on Microsoft .NET Framework 4.0";
+            this.label6.Text = "#Built on Microsoft .NET Framework 4.5";
             // 
             // label5
             // 
@@ -168,7 +190,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 34);
             this.label1.TabIndex = 4;
-            this.label1.Text = "v 1.0";
+            this.label1.Text = "v 1.2";
             // 
             // BUILD
             // 
@@ -177,9 +199,9 @@
             this.BUILD.ForeColor = System.Drawing.Color.Gainsboro;
             this.BUILD.Location = new System.Drawing.Point(588, 9);
             this.BUILD.Name = "BUILD";
-            this.BUILD.Size = new System.Drawing.Size(78, 20);
+            this.BUILD.Size = new System.Drawing.Size(74, 20);
             this.BUILD.TabIndex = 3;
-            this.BUILD.Text = "Build 1908";
+            this.BUILD.Text = "Build 1912";
             // 
             // Title
             // 
@@ -214,34 +236,6 @@
             this.label4.Size = new System.Drawing.Size(314, 39);
             this.label4.TabIndex = 4;
             this.label4.Text = "WE CHANGE THE FUTURE";
-            // 
-            // Loader
-            // 
-            this.Loader.Tick += new System.EventHandler(this.Loader_Tick);
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
-            this.label7.Location = new System.Drawing.Point(666, -3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 275);
-            this.label7.TabIndex = 7;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
-            this.label8.Location = new System.Drawing.Point(-33, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(41, 275);
-            this.label8.TabIndex = 8;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(36)))));
-            this.label9.Location = new System.Drawing.Point(0, -31);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(675, 40);
-            this.label9.TabIndex = 9;
             // 
             // label10
             // 
@@ -285,7 +279,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "About";
-            this.Opacity = 0D;
+            this.Opacity = 0.8D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DvNET MATH PRO About";
             this.Deactivate += new System.EventHandler(this.About_Deactivate);
@@ -310,7 +304,6 @@
         private System.Windows.Forms.Label DvNET;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Timer Loader;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;

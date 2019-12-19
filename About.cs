@@ -25,13 +25,8 @@ namespace DvNET_Math_Pro
 
         private void About_Load(object sender, EventArgs e)
         {
-            Loader.Enabled = true;
         }
 
-        private void Loader_Tick(object sender, EventArgs e)
-        {
-            if(this.Opacity < 100) { this.Opacity += 10; }
-        }
 
         private void Button1_Click(object sender, EventArgs e)
         {
