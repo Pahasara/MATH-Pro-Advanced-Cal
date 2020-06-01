@@ -1,6 +1,6 @@
 ﻿/*
  *
- * Copyright(c) 2019, M.P.Dewnith Fernando and/or its affiliates.All rights reserved.
+ * Copyright(c) 2019, 2020, M.P.Dewnith Fernando and/or its affiliates.All rights reserved.
  * M.P.Dewnith Fernando PROPRIETARY/CONFIDENTIAL.Use is subject to license terms.
  * 
  */
@@ -38,7 +38,12 @@ namespace DvNET_Math_Pro
 
         private void MainUI_Load(object sender, EventArgs e)
         {
+            Title.Text = "             MATH PRO  " + Main.GetVersion() + "        ";
+            Copyright.Text = "Copyright © " + Main.GetYear() + " M.P.Dewnith Fernando. All rights reserved.";
+            VersionLabel.Text = "DvNET MATH PRO " + Main.GetVersion(); ;
+            BuildLabel.Text = "Build " + Main.GetBuild();
         }
+
         private void Title_MouseDown(object sender, MouseEventArgs e)
         {
             this.startPoint = e.Location; this.drag = true;
@@ -63,6 +68,10 @@ namespace DvNET_Math_Pro
         {
             Process.Start("https://www.github.com/pahasara");
         }
+        private void CompanyLabel_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.github.com/pahasara");
+        }
         private void InputTextField1_Enter(object sender, EventArgs e)
         {
             TextFieldBack1.BackColor = Color.FromArgb(12, 108, 190);
@@ -70,7 +79,7 @@ namespace DvNET_Math_Pro
 
         private void InputTextField1_Leave(object sender, EventArgs e)
         {
-            TextFieldBack1.BackColor = Color.FromArgb(36, 36, 48);
+            TextFieldBack1.BackColor = Color.FromArgb(24, 24, 36);
         }
 
         private void InputTextField2_Enter(object sender, EventArgs e)
@@ -90,58 +99,49 @@ namespace DvNET_Math_Pro
 
         private void InputTextField2_Leave(object sender, EventArgs e)
         {
-            TextFieldBack2.BackColor = Color.FromArgb(36, 36, 48);
+            TextFieldBack2.BackColor = Color.FromArgb(24,24,36);
         }
 
         private void InputTextField3_Leave(object sender, EventArgs e)
         {
-            TextFieldBack3.BackColor = Color.FromArgb(36, 36, 48);
+            TextFieldBack3.BackColor = Color.FromArgb(24, 24, 36);
         }
 
         private void InputTextField4_Leave(object sender, EventArgs e)
         {
-            TextFieldBack4.BackColor = Color.FromArgb(36, 36, 48);
+            TextFieldBack4.BackColor = Color.FromArgb(24, 24, 36);
         }
         private void InputTextField1_Click(object sender, EventArgs e)
         {
-            InputTextField1.Clear();
+            InputTextField1.Clear(); num1 = 0;
         }
         private void InputTextField2_Click(object sender, EventArgs e)
         {
-            InputTextField2.Clear();
+            InputTextField2.Clear(); num2 = 0;
         }
         private void InputTextField3_Click(object sender, EventArgs e)
         {
-            InputTextField3.Clear();
+            InputTextField3.Clear(); num3 = 0;
         }
         private void InputTextField4_Click(object sender, EventArgs e)
         {
-            InputTextField4.Clear();
-        }
-        private void TextBox2_KeyUp(object sender, KeyEventArgs e)
-        {
-            try { num1 = Double.Parse(PythInput1.Text); } catch (FormatException) { PythInput1.Text = ""; Printerr(Main.InputTextError()); }
-        }
-
-        private void TextBox3_KeyUp(object sender, KeyEventArgs e)
-        {
-            try { num2 = Double.Parse(PythInput2.Text); } catch (FormatException) { PythInput2.Text = ""; Printerr(Main.InputTextError()); }
+            InputTextField4.Clear(); num4 = 0;
         }
         private void InputTextField1_KeyUp(object sender, KeyEventArgs e)
         {
-            try { num1 = Double.Parse(InputTextField1.Text); } catch (FormatException) { InputTextField1.Text = ""; Printerr(Main.InputTextError()); }
+            try { num1 = Double.Parse(InputTextField1.Text); } catch (FormatException) { InputTextField1.Text = ""; num1 = 0; Printerr(Main.InputTextError()); }
         }
         private void InputTextField2_KeyUp(object sender, KeyEventArgs e)
         {
-            try { num2 = Double.Parse(InputTextField2.Text); } catch (FormatException) { InputTextField2.Text = ""; Printerr(Main.InputTextError()); }
+            try { num2 = Double.Parse(InputTextField2.Text); } catch (FormatException) { InputTextField2.Text = ""; num2 = 0; Printerr(Main.InputTextError()); }
         }
         private void InputTextField3_KeyUp(object sender, KeyEventArgs e)
         {
-            try { num3 = Double.Parse(InputTextField3.Text); } catch (FormatException) { InputTextField3.Text = ""; Printerr(Main.InputTextError()); }
+            try { num3 = Double.Parse(InputTextField3.Text); } catch (FormatException) { InputTextField3.Text = ""; num3 = 0;  Printerr(Main.InputTextError()); }
         }
         private void InputTextField4_KeyUp(object sender, KeyEventArgs e)
         {
-            try { num4 = Double.Parse(InputTextField4.Text); } catch (FormatException) { InputTextField4.Text = ""; Printerr(Main.InputTextError()); }
+            try { num4 = Double.Parse(InputTextField4.Text); } catch (FormatException) { InputTextField4.Text = ""; num4 = 0; Printerr(Main.InputTextError()); }
         }
         private void OutputTextClearBtn_Click(object sender, EventArgs e)
         {
@@ -268,7 +268,7 @@ namespace DvNET_Math_Pro
         {
             operation = "VrectangleBox";
             InputTextLabel1.Text = "Length :";
-            InputTextLabel2.Text = "Width :";
+            InputTextLabel2.Text = "Width  :";
             InputTextLabel3.Text = "Height :";
             InputTextLabel4.Text = "------ :";
             Submit();
@@ -312,14 +312,6 @@ namespace DvNET_Math_Pro
             InputTextLabel3.Text = "Height :";
             InputTextLabel4.Text = "------ :";
             Submit();
-        }
-
-        private void PythCompute_Click(object sender, EventArgs e)
-        {
-            operation = "Pythagorean";
-            try { result = Area.Pythagorean(num2, num1); } catch (Exception) { Printerr(Main.PythagoreanSubmitError()); }
-            Print(">>> Length of the hypotenuse is : " + result.ToString());
-            xSubmit();
         }
 
 
@@ -424,7 +416,7 @@ namespace DvNET_Math_Pro
                 }
                 else if (operation == "Sacceleration")
                 {
-                    result = Sci.Acceleration(num1, num2);
+                    result = Sci.Acceleration(num1, num2,num3);
                     Print(">>> Acceleration : " + result.ToString());
                 }
                 else if (operation == "Senergy")
@@ -457,6 +449,31 @@ namespace DvNET_Math_Pro
                     result = Sci.RForce(num1, num2,num3);
                     Print(">>> Resultant Force : " + result.ToString());
                 }
+                else if (operation == "GPenergy")
+                {
+                    result = Sci.GravPotentialEnergy(num1, num2, num3);
+                    Print(">>> Gravitational Potential Energy : " + result.ToString());
+                }
+                else if (operation == "LKenergy")
+                {
+                    result = Sci.LinearKineticEnergy(num1, num2);
+                    Print(">>> Linear Kinetic Energy : " + result.ToString());
+                }
+                else if (operation == "AngV")
+                {
+                    result = Sci.AngularV(num1);
+                    Print(">>> Angular Velocity : " + result.ToString());
+                }
+                else if (operation == "Sfreq")
+                {
+                    result = Sci.Frequency(num1, num2);
+                    Print(">>> Frequency : " + result.ToString());
+                }
+                else if (operation == "Pythagorean")
+                {
+                    result = Area.Pythagorean(num1, num2);
+                    Print(">>> Hypotenuse : " + result.ToString());
+                }
                 xSubmit();
             }
             catch (Exception) { Print(Main.InputSubmitError()); }
@@ -486,9 +503,9 @@ namespace DvNET_Math_Pro
         private void Sacceleration_Click(object sender, EventArgs e)
         {
             operation = "Sacceleration";
-            InputTextLabel1.Text = "Velocity :";
-            InputTextLabel2.Text = "Time     :";
-            InputTextLabel3.Text = "-------- :";
+            InputTextLabel1.Text = "Start V. :";
+            InputTextLabel2.Text = "End V.   :";
+            InputTextLabel3.Text = "Time     :";
             InputTextLabel4.Text = "-------- :";
             Submit();
         }
@@ -496,8 +513,8 @@ namespace DvNET_Math_Pro
         private void Senergy_Click(object sender, EventArgs e)
         {
             operation = "Senergy";
-            InputTextLabel1.Text = "Mass     :";
-            InputTextLabel2.Text = "Velocity :";
+            InputTextLabel1.Text = "Force    :";
+            InputTextLabel2.Text = "Distance :";
             InputTextLabel3.Text = "-------- :";
             InputTextLabel4.Text = "-------- :";
             Submit();
@@ -528,6 +545,7 @@ namespace DvNET_Math_Pro
             operation = "Smass";
             InputTextLabel1.Text = "Force   :";
             InputTextLabel2.Text = "Gravity :";
+            InputTextField2.Text = "9.8"; num2 = 9.8; //SET GRAVITATION VALUE
             InputTextLabel3.Text = "------- :";
             InputTextLabel4.Text = "------- :";
             Submit();
@@ -538,6 +556,7 @@ namespace DvNET_Math_Pro
             operation = "Sforce";
             InputTextLabel1.Text = "Mass    :";
             InputTextLabel2.Text = "Gravity :";
+            InputTextField2.Text = "9.8"; num2 = 9.8; //SET GRAVITATION VALUE
             InputTextLabel3.Text = "------- :";
             InputTextLabel4.Text = "------- :";
             Submit();
@@ -553,9 +572,63 @@ namespace DvNET_Math_Pro
             Submit();
         }
 
+        private void LKEnergy_Click(object sender, EventArgs e)
+        {
+            operation = "LKenergy";
+            InputTextLabel1.Text = "Mass     :";
+            InputTextLabel2.Text = "Velocity :";
+            InputTextLabel3.Text = "-------- :";
+            InputTextLabel4.Text = "-------- :";            
+            Submit();
+        }
+
+        private void GPEnergy_Click(object sender, EventArgs e)
+        {
+            operation = "GPenergy";
+            InputTextLabel1.Text = "Mass    :";
+            InputTextLabel2.Text = "Gravity :"; InputTextField2.Text = "9.8"; num2 = 9.8; //SET GRAVITATION VALUE
+            InputTextLabel3.Text = "Height  :";
+            InputTextLabel4.Text = "------- :";
+            Submit();
+        }
+
+        private void SangularV_Click(object sender, EventArgs e)
+        {
+            operation = "AngV";
+            InputTextLabel1.Text = "Frequency :";
+            InputTextLabel2.Text = "--------- :";
+            InputTextLabel3.Text = "--------- :";
+            InputTextLabel4.Text = "--------- :";
+            Submit();
+        }
+
+        private void Sfrequency_Click(object sender, EventArgs e)
+        {
+            operation = "Sfreq";
+            InputTextLabel1.Text = "Rounds (n) :";
+            InputTextLabel2.Text = "Time       :";
+            InputTextLabel3.Text = "---------- :";
+            InputTextLabel4.Text = "---------- :";
+            Submit();
+        }
+
+        private void Spythgr_Click(object sender, EventArgs e)
+        {
+            operation = "Pythagorean";
+            InputTextLabel1.Text = "Height     :";
+            InputTextLabel2.Text = "Aid        :";
+            InputTextLabel3.Text = "---------- :";
+            InputTextLabel4.Text = "---------- :";
+            Submit();
+        }
+
+        private void OutputTextField_TextChanged(object sender, EventArgs e)
+        {
+
+        }
 
         /***************************                         *  PUBLIC FUNCTIONS  *                            *************************/
-        public void Print(string Text) { OutputTextFieldBack.BackColor = Color.FromArgb(12, 100, 198); OutputTextField.ForeColor = Color.FromArgb(10, 132, 28); OutputTextField.Text += Text; OutputTextFieldBack.BackColor = Color.FromArgb(36, 36, 48); }
+        public void Print(string Text) { OutputTextFieldBack.BackColor = Color.FromArgb(12, 100, 198); OutputTextField.ForeColor = Color.FromArgb(10, 150, 40); OutputTextField.Text += Text; OutputTextFieldBack.BackColor = Color.FromArgb(20,24,50); }
         public void Printerr(string Text) { OutputTextField.ForeColor = Color.FromArgb(175, 32, 32); OutputTextField.Text = Text; }
         public void Submit() { SubmitBtn.Enabled = true; OutputTextCopyBtn.Enabled = false; OutputTextClearBtn.Enabled = false; }
         public void xSubmit() { SubmitBtn.Enabled = false; OutputTextCopyBtn.Enabled = true; OutputTextClearBtn.Enabled = true; }
