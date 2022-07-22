@@ -71,7 +71,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.SubmitBtn = new System.Windows.Forms.Button();
             this.CopyTextLabel = new System.Windows.Forms.Label();
-            this.Memory = new System.Windows.Forms.Label();
+            this.Memory = new System.Windows.Forms.TextBox();
             this.OutputTextCopyBtn = new System.Windows.Forms.Button();
             this.OutputTextClearBtn = new System.Windows.Forms.Button();
             this.OutpuFormTitle = new System.Windows.Forms.Label();
@@ -121,12 +121,12 @@
             this.Title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(8)))));
             this.Title.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Title.Font = new System.Drawing.Font("Orbitron", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(180)))), ((int)(((byte)(198)))));
+            this.Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(190)))), ((int)(((byte)(208)))));
             this.Title.Location = new System.Drawing.Point(43, 0);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(752, 32);
+            this.Title.Size = new System.Drawing.Size(675, 32);
             this.Title.TabIndex = 0;
-            this.Title.Text = "            MATH PRO v1.2 by DvN3T       ";
+            this.Title.Text = "              MATH PRO v1.x ";
             this.Title.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Title_MouseDown);
             this.Title.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Title_MouseMove);
             this.Title.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Title_MouseUp);
@@ -143,7 +143,7 @@
             this.TitlePanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.TitlePanel.Location = new System.Drawing.Point(0, 0);
             this.TitlePanel.Name = "TitlePanel";
-            this.TitlePanel.Size = new System.Drawing.Size(795, 32);
+            this.TitlePanel.Size = new System.Drawing.Size(718, 32);
             this.TitlePanel.TabIndex = 2;
             // 
             // AboutBtn
@@ -156,7 +156,7 @@
             this.AboutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AboutBtn.Font = new System.Drawing.Font("Russo One", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutBtn.ForeColor = System.Drawing.Color.White;
-            this.AboutBtn.Location = new System.Drawing.Point(582, 2);
+            this.AboutBtn.Location = new System.Drawing.Point(504, 2);
             this.AboutBtn.Name = "AboutBtn";
             this.AboutBtn.Size = new System.Drawing.Size(82, 30);
             this.AboutBtn.TabIndex = 20;
@@ -169,11 +169,11 @@
             this.CompanyLabel.AutoSize = true;
             this.CompanyLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(14)))));
             this.CompanyLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CompanyLabel.Font = new System.Drawing.Font("Russo One", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CompanyLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(188)))), ((int)(((byte)(25)))));
-            this.CompanyLabel.Location = new System.Drawing.Point(46, 3);
+            this.CompanyLabel.Font = new System.Drawing.Font("Robot Reavers", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CompanyLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(198)))), ((int)(((byte)(25)))));
+            this.CompanyLabel.Location = new System.Drawing.Point(46, 7);
             this.CompanyLabel.Name = "CompanyLabel";
-            this.CompanyLabel.Size = new System.Drawing.Size(92, 29);
+            this.CompanyLabel.Size = new System.Drawing.Size(94, 19);
             this.CompanyLabel.TabIndex = 5;
             this.CompanyLabel.Text = "DvN3T";
             this.CompanyLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -189,7 +189,7 @@
             this.MinimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.MinimizeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinimizeBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
-            this.MinimizeBtn.Location = new System.Drawing.Point(669, 0);
+            this.MinimizeBtn.Location = new System.Drawing.Point(592, 0);
             this.MinimizeBtn.Name = "MinimizeBtn";
             this.MinimizeBtn.Size = new System.Drawing.Size(42, 32);
             this.MinimizeBtn.TabIndex = 4;
@@ -208,7 +208,7 @@
             this.RestoreBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RestoreBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RestoreBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(180)))));
-            this.RestoreBtn.Location = new System.Drawing.Point(711, 0);
+            this.RestoreBtn.Location = new System.Drawing.Point(634, 0);
             this.RestoreBtn.Name = "RestoreBtn";
             this.RestoreBtn.Size = new System.Drawing.Size(42, 32);
             this.RestoreBtn.TabIndex = 3;
@@ -225,7 +225,7 @@
             this.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(210)))), ((int)(((byte)(220)))));
-            this.CloseBtn.Location = new System.Drawing.Point(753, 0);
+            this.CloseBtn.Location = new System.Drawing.Point(676, 0);
             this.CloseBtn.Name = "CloseBtn";
             this.CloseBtn.Size = new System.Drawing.Size(42, 32);
             this.CloseBtn.TabIndex = 2;
@@ -238,7 +238,7 @@
             this.LOGO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(12)))), ((int)(((byte)(24)))));
             this.LOGO.Cursor = System.Windows.Forms.Cursors.Default;
             this.LOGO.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LOGO.Image = global::DvNET_MATH_Pro.Properties.Resources.app;
+            this.LOGO.Image = ((System.Drawing.Image)(resources.GetObject("LOGO.Image")));
             this.LOGO.Location = new System.Drawing.Point(0, 0);
             this.LOGO.Name = "LOGO";
             this.LOGO.Size = new System.Drawing.Size(43, 32);
@@ -258,7 +258,7 @@
             this.MainWindowPanel.Controls.Add(this.panel2);
             this.MainWindowPanel.Location = new System.Drawing.Point(0, 35);
             this.MainWindowPanel.Name = "MainWindowPanel";
-            this.MainWindowPanel.Size = new System.Drawing.Size(795, 435);
+            this.MainWindowPanel.Size = new System.Drawing.Size(725, 435);
             this.MainWindowPanel.TabIndex = 3;
             // 
             // panel6
@@ -282,7 +282,7 @@
             this.panel6.Controls.Add(this.Sspeed);
             this.panel6.Location = new System.Drawing.Point(6, 276);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(782, 118);
+            this.panel6.Size = new System.Drawing.Size(707, 118);
             this.panel6.TabIndex = 20;
             // 
             // RForce
@@ -294,11 +294,11 @@
             this.RForce.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RForce.Font = new System.Drawing.Font("Russo One", 9.75F);
             this.RForce.ForeColor = System.Drawing.Color.Gainsboro;
-            this.RForce.Location = new System.Drawing.Point(403, 83);
+            this.RForce.Location = new System.Drawing.Point(362, 83);
             this.RForce.Name = "RForce";
-            this.RForce.Size = new System.Drawing.Size(83, 26);
+            this.RForce.Size = new System.Drawing.Size(100, 26);
             this.RForce.TabIndex = 11;
-            this.RForce.Text = "R. Force";
+            this.RForce.Text = "Resultant F.";
             this.RForce.UseVisualStyleBackColor = false;
             this.RForce.Click += new System.EventHandler(this.RForce_Click);
             // 
@@ -311,9 +311,9 @@
             this.Sforce.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sforce.Font = new System.Drawing.Font("Russo One", 9.75F);
             this.Sforce.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Sforce.Location = new System.Drawing.Point(222, 51);
+            this.Sforce.Location = new System.Drawing.Point(206, 51);
             this.Sforce.Name = "Sforce";
-            this.Sforce.Size = new System.Drawing.Size(92, 26);
+            this.Sforce.Size = new System.Drawing.Size(80, 26);
             this.Sforce.TabIndex = 10;
             this.Sforce.Text = "Force";
             this.Sforce.UseVisualStyleBackColor = false;
@@ -328,9 +328,9 @@
             this.Smass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Smass.Font = new System.Drawing.Font("Russo One", 9.75F);
             this.Smass.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Smass.Location = new System.Drawing.Point(403, 51);
+            this.Smass.Location = new System.Drawing.Point(362, 51);
             this.Smass.Name = "Smass";
-            this.Smass.Size = new System.Drawing.Size(83, 26);
+            this.Smass.Size = new System.Drawing.Size(100, 26);
             this.Smass.TabIndex = 8;
             this.Smass.Text = "Mass";
             this.Smass.UseVisualStyleBackColor = false;
@@ -345,9 +345,9 @@
             this.Spythgr.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Spythgr.Font = new System.Drawing.Font("Russo One", 9.75F);
             this.Spythgr.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Spythgr.Location = new System.Drawing.Point(105, 51);
+            this.Spythgr.Location = new System.Drawing.Point(90, 51);
             this.Spythgr.Name = "Spythgr";
-            this.Spythgr.Size = new System.Drawing.Size(111, 26);
+            this.Spythgr.Size = new System.Drawing.Size(109, 26);
             this.Spythgr.TabIndex = 8;
             this.Spythgr.Text = "Pythagorean";
             this.Spythgr.UseVisualStyleBackColor = false;
@@ -374,9 +374,9 @@
             this.Senergy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Senergy.Font = new System.Drawing.Font("Russo One", 9.75F);
             this.Senergy.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Senergy.Location = new System.Drawing.Point(320, 83);
+            this.Senergy.Location = new System.Drawing.Point(292, 83);
             this.Senergy.Name = "Senergy";
-            this.Senergy.Size = new System.Drawing.Size(77, 26);
+            this.Senergy.Size = new System.Drawing.Size(63, 26);
             this.Senergy.TabIndex = 3;
             this.Senergy.Text = "Energy";
             this.Senergy.UseVisualStyleBackColor = false;
@@ -391,9 +391,9 @@
             this.Vpower.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Vpower.Font = new System.Drawing.Font("Russo One", 9.75F);
             this.Vpower.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Vpower.Location = new System.Drawing.Point(320, 51);
+            this.Vpower.Location = new System.Drawing.Point(292, 51);
             this.Vpower.Name = "Vpower";
-            this.Vpower.Size = new System.Drawing.Size(77, 26);
+            this.Vpower.Size = new System.Drawing.Size(63, 26);
             this.Vpower.TabIndex = 6;
             this.Vpower.Text = "Power";
             this.Vpower.UseVisualStyleBackColor = false;
@@ -408,11 +408,11 @@
             this.SangularV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SangularV.Font = new System.Drawing.Font("Russo One", 9.75F);
             this.SangularV.ForeColor = System.Drawing.Color.Gainsboro;
-            this.SangularV.Location = new System.Drawing.Point(640, 83);
+            this.SangularV.Location = new System.Drawing.Point(608, 83);
             this.SangularV.Name = "SangularV";
-            this.SangularV.Size = new System.Drawing.Size(134, 26);
+            this.SangularV.Size = new System.Drawing.Size(86, 26);
             this.SangularV.TabIndex = 5;
-            this.SangularV.Text = "Angular Velocity";
+            this.SangularV.Text = "Angular V.";
             this.SangularV.UseVisualStyleBackColor = false;
             this.SangularV.Click += new System.EventHandler(this.SangularV_Click);
             // 
@@ -425,9 +425,9 @@
             this.Sfrequency.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sfrequency.Font = new System.Drawing.Font("Russo One", 9.75F);
             this.Sfrequency.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Sfrequency.Location = new System.Drawing.Point(640, 51);
+            this.Sfrequency.Location = new System.Drawing.Point(608, 51);
             this.Sfrequency.Name = "Sfrequency";
-            this.Sfrequency.Size = new System.Drawing.Size(134, 26);
+            this.Sfrequency.Size = new System.Drawing.Size(86, 26);
             this.Sfrequency.TabIndex = 4;
             this.Sfrequency.Text = "Frequency";
             this.Sfrequency.UseVisualStyleBackColor = false;
@@ -442,9 +442,9 @@
             this.Sacceleration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sacceleration.Font = new System.Drawing.Font("Russo One", 9.75F);
             this.Sacceleration.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Sacceleration.Location = new System.Drawing.Point(105, 83);
+            this.Sacceleration.Location = new System.Drawing.Point(90, 83);
             this.Sacceleration.Name = "Sacceleration";
-            this.Sacceleration.Size = new System.Drawing.Size(111, 26);
+            this.Sacceleration.Size = new System.Drawing.Size(109, 26);
             this.Sacceleration.TabIndex = 5;
             this.Sacceleration.Text = "Accelertation";
             this.Sacceleration.UseVisualStyleBackColor = false;
@@ -459,9 +459,9 @@
             this.GPEnergy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GPEnergy.Font = new System.Drawing.Font("Russo One", 9.75F);
             this.GPEnergy.ForeColor = System.Drawing.Color.Gainsboro;
-            this.GPEnergy.Location = new System.Drawing.Point(492, 83);
+            this.GPEnergy.Location = new System.Drawing.Point(469, 83);
             this.GPEnergy.Name = "GPEnergy";
-            this.GPEnergy.Size = new System.Drawing.Size(142, 26);
+            this.GPEnergy.Size = new System.Drawing.Size(132, 26);
             this.GPEnergy.TabIndex = 2;
             this.GPEnergy.Text = "Grvt. Potential E.";
             this.GPEnergy.UseVisualStyleBackColor = false;
@@ -476,9 +476,9 @@
             this.Sdistance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Sdistance.Font = new System.Drawing.Font("Russo One", 9.75F);
             this.Sdistance.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Sdistance.Location = new System.Drawing.Point(222, 83);
+            this.Sdistance.Location = new System.Drawing.Point(206, 83);
             this.Sdistance.Name = "Sdistance";
-            this.Sdistance.Size = new System.Drawing.Size(92, 26);
+            this.Sdistance.Size = new System.Drawing.Size(80, 26);
             this.Sdistance.TabIndex = 4;
             this.Sdistance.Text = "Distance";
             this.Sdistance.UseVisualStyleBackColor = false;
@@ -492,7 +492,7 @@
             this.label3.ForeColor = System.Drawing.Color.Silver;
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(782, 24);
+            this.label3.Size = new System.Drawing.Size(707, 24);
             this.label3.TabIndex = 1;
             this.label3.Text = "SCIENTIFIC CALCULATIONS";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -508,7 +508,7 @@
             this.Svelocity.ForeColor = System.Drawing.Color.Gainsboro;
             this.Svelocity.Location = new System.Drawing.Point(8, 83);
             this.Svelocity.Name = "Svelocity";
-            this.Svelocity.Size = new System.Drawing.Size(90, 26);
+            this.Svelocity.Size = new System.Drawing.Size(75, 26);
             this.Svelocity.TabIndex = 2;
             this.Svelocity.Text = "Velocity";
             this.Svelocity.UseVisualStyleBackColor = false;
@@ -523,9 +523,9 @@
             this.LKEnergy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LKEnergy.Font = new System.Drawing.Font("Russo One", 9.75F);
             this.LKEnergy.ForeColor = System.Drawing.Color.Gainsboro;
-            this.LKEnergy.Location = new System.Drawing.Point(492, 51);
+            this.LKEnergy.Location = new System.Drawing.Point(469, 51);
             this.LKEnergy.Name = "LKEnergy";
-            this.LKEnergy.Size = new System.Drawing.Size(142, 26);
+            this.LKEnergy.Size = new System.Drawing.Size(132, 26);
             this.LKEnergy.TabIndex = 0;
             this.LKEnergy.Text = "Linear Kinetic E.";
             this.LKEnergy.UseVisualStyleBackColor = false;
@@ -542,7 +542,7 @@
             this.Sspeed.ForeColor = System.Drawing.Color.Gainsboro;
             this.Sspeed.Location = new System.Drawing.Point(8, 51);
             this.Sspeed.Name = "Sspeed";
-            this.Sspeed.Size = new System.Drawing.Size(90, 26);
+            this.Sspeed.Size = new System.Drawing.Size(75, 26);
             this.Sspeed.TabIndex = 0;
             this.Sspeed.Text = "Speed";
             this.Sspeed.UseVisualStyleBackColor = false;
@@ -555,9 +555,9 @@
             this.CopyrightPanel.Controls.Add(this.BuildLabel);
             this.CopyrightPanel.Controls.Add(this.VersionLabel);
             this.CopyrightPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.CopyrightPanel.Location = new System.Drawing.Point(0, 407);
+            this.CopyrightPanel.Location = new System.Drawing.Point(0, 403);
             this.CopyrightPanel.Name = "CopyrightPanel";
-            this.CopyrightPanel.Size = new System.Drawing.Size(795, 28);
+            this.CopyrightPanel.Size = new System.Drawing.Size(725, 32);
             this.CopyrightPanel.TabIndex = 17;
             // 
             // Copyright
@@ -566,7 +566,7 @@
             this.Copyright.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(10)))), ((int)(((byte)(30)))));
             this.Copyright.Font = new System.Drawing.Font("Orbitron", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Copyright.ForeColor = System.Drawing.Color.Silver;
-            this.Copyright.Location = new System.Drawing.Point(229, 7);
+            this.Copyright.Location = new System.Drawing.Point(159, 7);
             this.Copyright.Name = "Copyright";
             this.Copyright.Size = new System.Drawing.Size(411, 15);
             this.Copyright.TabIndex = 4;
@@ -578,7 +578,7 @@
             this.BuildLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(10)))), ((int)(((byte)(30)))));
             this.BuildLabel.Font = new System.Drawing.Font("Orbitron", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BuildLabel.ForeColor = System.Drawing.Color.Silver;
-            this.BuildLabel.Location = new System.Drawing.Point(701, 7);
+            this.BuildLabel.Location = new System.Drawing.Point(628, 7);
             this.BuildLabel.Name = "BuildLabel";
             this.BuildLabel.Size = new System.Drawing.Size(74, 15);
             this.BuildLabel.TabIndex = 3;
@@ -592,9 +592,9 @@
             this.VersionLabel.ForeColor = System.Drawing.Color.Silver;
             this.VersionLabel.Location = new System.Drawing.Point(9, 7);
             this.VersionLabel.Name = "VersionLabel";
-            this.VersionLabel.Size = new System.Drawing.Size(163, 15);
+            this.VersionLabel.Size = new System.Drawing.Size(109, 15);
             this.VersionLabel.TabIndex = 1;
-            this.VersionLabel.Text = "DvN3T MATH PRO v1.2";
+            this.VersionLabel.Text = "MATH PRO v1.x";
             // 
             // panel4
             // 
@@ -607,9 +607,9 @@
             this.panel4.Controls.Add(this.Vcylinder);
             this.panel4.Controls.Add(this.VolumeLabel);
             this.panel4.Controls.Add(this.Vcube);
-            this.panel4.Location = new System.Drawing.Point(537, 9);
+            this.panel4.Location = new System.Drawing.Point(503, 9);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(251, 162);
+            this.panel4.Size = new System.Drawing.Size(212, 162);
             this.panel4.TabIndex = 16;
             // 
             // label2
@@ -633,9 +633,9 @@
             this.Vpyramid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Vpyramid.Font = new System.Drawing.Font("Russo One", 9.75F);
             this.Vpyramid.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Vpyramid.Location = new System.Drawing.Point(119, 124);
+            this.Vpyramid.Location = new System.Drawing.Point(91, 124);
             this.Vpyramid.Name = "Vpyramid";
-            this.Vpyramid.Size = new System.Drawing.Size(124, 26);
+            this.Vpyramid.Size = new System.Drawing.Size(113, 26);
             this.Vpyramid.TabIndex = 6;
             this.Vpyramid.Text = "Pyramid";
             this.Vpyramid.UseVisualStyleBackColor = false;
@@ -650,9 +650,9 @@
             this.VcircularCone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.VcircularCone.Font = new System.Drawing.Font("Russo One", 9.75F);
             this.VcircularCone.ForeColor = System.Drawing.Color.Gainsboro;
-            this.VcircularCone.Location = new System.Drawing.Point(120, 92);
+            this.VcircularCone.Location = new System.Drawing.Point(91, 92);
             this.VcircularCone.Name = "VcircularCone";
-            this.VcircularCone.Size = new System.Drawing.Size(124, 26);
+            this.VcircularCone.Size = new System.Drawing.Size(113, 26);
             this.VcircularCone.TabIndex = 5;
             this.VcircularCone.Text = "Circular Cone";
             this.VcircularCone.UseVisualStyleBackColor = false;
@@ -667,9 +667,9 @@
             this.vrectBoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.vrectBoc.Font = new System.Drawing.Font("Russo One", 9.75F);
             this.vrectBoc.ForeColor = System.Drawing.Color.Gainsboro;
-            this.vrectBoc.Location = new System.Drawing.Point(120, 60);
+            this.vrectBoc.Location = new System.Drawing.Point(91, 60);
             this.vrectBoc.Name = "vrectBoc";
-            this.vrectBoc.Size = new System.Drawing.Size(124, 26);
+            this.vrectBoc.Size = new System.Drawing.Size(113, 26);
             this.vrectBoc.TabIndex = 4;
             this.vrectBoc.Text = "Rectangle Box";
             this.vrectBoc.UseVisualStyleBackColor = false;
@@ -686,7 +686,7 @@
             this.Vsphere.ForeColor = System.Drawing.Color.Gainsboro;
             this.Vsphere.Location = new System.Drawing.Point(9, 124);
             this.Vsphere.Name = "Vsphere";
-            this.Vsphere.Size = new System.Drawing.Size(104, 26);
+            this.Vsphere.Size = new System.Drawing.Size(75, 26);
             this.Vsphere.TabIndex = 3;
             this.Vsphere.Text = "Sphere";
             this.Vsphere.UseVisualStyleBackColor = false;
@@ -703,7 +703,7 @@
             this.Vcylinder.ForeColor = System.Drawing.Color.Gainsboro;
             this.Vcylinder.Location = new System.Drawing.Point(9, 92);
             this.Vcylinder.Name = "Vcylinder";
-            this.Vcylinder.Size = new System.Drawing.Size(104, 26);
+            this.Vcylinder.Size = new System.Drawing.Size(75, 26);
             this.Vcylinder.TabIndex = 2;
             this.Vcylinder.Text = "Cylinder";
             this.Vcylinder.UseVisualStyleBackColor = false;
@@ -717,7 +717,7 @@
             this.VolumeLabel.ForeColor = System.Drawing.Color.Silver;
             this.VolumeLabel.Location = new System.Drawing.Point(0, 0);
             this.VolumeLabel.Name = "VolumeLabel";
-            this.VolumeLabel.Size = new System.Drawing.Size(251, 24);
+            this.VolumeLabel.Size = new System.Drawing.Size(212, 24);
             this.VolumeLabel.TabIndex = 1;
             this.VolumeLabel.Text = "GEOMETRY";
             this.VolumeLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -733,7 +733,7 @@
             this.Vcube.ForeColor = System.Drawing.Color.Gainsboro;
             this.Vcube.Location = new System.Drawing.Point(8, 60);
             this.Vcube.Name = "Vcube";
-            this.Vcube.Size = new System.Drawing.Size(105, 26);
+            this.Vcube.Size = new System.Drawing.Size(76, 26);
             this.Vcube.TabIndex = 0;
             this.Vcube.Text = "Cube";
             this.Vcube.UseVisualStyleBackColor = false;
@@ -750,9 +750,9 @@
             this.panel3.Controls.Add(this.OutpuFormTitle);
             this.panel3.Controls.Add(this.OutputTextField);
             this.panel3.Controls.Add(this.OutputTextFieldBack);
-            this.panel3.Location = new System.Drawing.Point(218, 176);
+            this.panel3.Location = new System.Drawing.Point(244, 176);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(570, 93);
+            this.panel3.Size = new System.Drawing.Size(469, 93);
             this.panel3.TabIndex = 15;
             // 
             // SubmitBtn
@@ -764,13 +764,14 @@
             this.SubmitBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(30)))), ((int)(((byte)(6)))));
             this.SubmitBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(70)))), ((int)(((byte)(20)))));
             this.SubmitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SubmitBtn.Font = new System.Drawing.Font("Russo One", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubmitBtn.Font = new System.Drawing.Font("Russo One", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SubmitBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(220)))), ((int)(((byte)(228)))));
-            this.SubmitBtn.Location = new System.Drawing.Point(10, 32);
+            this.SubmitBtn.Location = new System.Drawing.Point(18, 61);
             this.SubmitBtn.Name = "SubmitBtn";
-            this.SubmitBtn.Size = new System.Drawing.Size(90, 25);
+            this.SubmitBtn.Size = new System.Drawing.Size(78, 24);
             this.SubmitBtn.TabIndex = 14;
             this.SubmitBtn.Text = "Calculate";
+            this.SubmitBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.SubmitBtn.UseVisualStyleBackColor = false;
             this.SubmitBtn.Click += new System.EventHandler(this.SubmitBtn_Click);
             // 
@@ -779,8 +780,8 @@
             this.CopyTextLabel.AutoSize = true;
             this.CopyTextLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(14)))), ((int)(((byte)(40)))));
             this.CopyTextLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CopyTextLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.CopyTextLabel.Location = new System.Drawing.Point(139, 65);
+            this.CopyTextLabel.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.CopyTextLabel.Location = new System.Drawing.Point(113, 65);
             this.CopyTextLabel.Name = "CopyTextLabel";
             this.CopyTextLabel.Size = new System.Drawing.Size(58, 15);
             this.CopyTextLabel.TabIndex = 17;
@@ -789,15 +790,15 @@
             // Memory
             // 
             this.Memory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(26)))), ((int)(((byte)(58)))));
-            this.Memory.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Memory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Memory.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Memory.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Memory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Memory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(132)))));
-            this.Memory.Location = new System.Drawing.Point(194, 67);
+            this.Memory.ForeColor = System.Drawing.Color.Silver;
+            this.Memory.Location = new System.Drawing.Point(174, 67);
             this.Memory.Name = "Memory";
-            this.Memory.Size = new System.Drawing.Size(198, 14);
+            this.Memory.Size = new System.Drawing.Size(147, 14);
             this.Memory.TabIndex = 16;
-            this.Memory.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Memory.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // OutputTextCopyBtn
             // 
@@ -810,9 +811,9 @@
             this.OutputTextCopyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OutputTextCopyBtn.Font = new System.Drawing.Font("Russo One", 9.25F);
             this.OutputTextCopyBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(188)))));
-            this.OutputTextCopyBtn.Location = new System.Drawing.Point(430, 63);
+            this.OutputTextCopyBtn.Location = new System.Drawing.Point(340, 61);
             this.OutputTextCopyBtn.Name = "OutputTextCopyBtn";
-            this.OutputTextCopyBtn.Size = new System.Drawing.Size(60, 24);
+            this.OutputTextCopyBtn.Size = new System.Drawing.Size(50, 24);
             this.OutputTextCopyBtn.TabIndex = 15;
             this.OutputTextCopyBtn.Text = "Copy";
             this.OutputTextCopyBtn.UseVisualStyleBackColor = false;
@@ -828,9 +829,9 @@
             this.OutputTextClearBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.OutputTextClearBtn.Font = new System.Drawing.Font("Russo One", 9.25F);
             this.OutputTextClearBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(188)))));
-            this.OutputTextClearBtn.Location = new System.Drawing.Point(497, 63);
+            this.OutputTextClearBtn.Location = new System.Drawing.Point(395, 61);
             this.OutputTextClearBtn.Name = "OutputTextClearBtn";
-            this.OutputTextClearBtn.Size = new System.Drawing.Size(60, 24);
+            this.OutputTextClearBtn.Size = new System.Drawing.Size(57, 24);
             this.OutputTextClearBtn.TabIndex = 14;
             this.OutputTextClearBtn.Text = "Clear";
             this.OutputTextClearBtn.UseVisualStyleBackColor = false;
@@ -844,7 +845,7 @@
             this.OutpuFormTitle.ForeColor = System.Drawing.Color.Silver;
             this.OutpuFormTitle.Location = new System.Drawing.Point(0, 0);
             this.OutpuFormTitle.Name = "OutpuFormTitle";
-            this.OutpuFormTitle.Size = new System.Drawing.Size(570, 23);
+            this.OutpuFormTitle.Size = new System.Drawing.Size(469, 23);
             this.OutpuFormTitle.TabIndex = 2;
             this.OutpuFormTitle.Text = "OUTPUT FORM";
             this.OutpuFormTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -853,23 +854,23 @@
             // 
             this.OutputTextField.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(4)))), ((int)(((byte)(12)))));
             this.OutputTextField.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.OutputTextField.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OutputTextField.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(142)))), ((int)(((byte)(38)))));
-            this.OutputTextField.Location = new System.Drawing.Point(110, 28);
+            this.OutputTextField.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OutputTextField.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(209)))), ((int)(((byte)(24)))));
+            this.OutputTextField.Location = new System.Drawing.Point(10, 28);
             this.OutputTextField.MaxLength = 128;
             this.OutputTextField.Multiline = true;
             this.OutputTextField.Name = "OutputTextField";
-            this.OutputTextField.Size = new System.Drawing.Size(447, 27);
+            this.OutputTextField.Size = new System.Drawing.Size(450, 27);
             this.OutputTextField.TabIndex = 3;
-            this.OutputTextField.Text = "Please select a operation first....";
+            this.OutputTextField.Text = "Please select a operation first.... ";
             this.OutputTextField.TextChanged += new System.EventHandler(this.OutputTextField_TextChanged);
             // 
             // OutputTextFieldBack
             // 
             this.OutputTextFieldBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(24)))), ((int)(((byte)(50)))));
-            this.OutputTextFieldBack.Location = new System.Drawing.Point(109, 27);
+            this.OutputTextFieldBack.Location = new System.Drawing.Point(9, 27);
             this.OutputTextFieldBack.Name = "OutputTextFieldBack";
-            this.OutputTextFieldBack.Size = new System.Drawing.Size(449, 29);
+            this.OutputTextFieldBack.Size = new System.Drawing.Size(452, 29);
             this.OutputTextFieldBack.TabIndex = 4;
             this.OutputTextFieldBack.Text = "32, 112, 164";
             // 
@@ -889,7 +890,7 @@
             this.InputFormPanel.Controls.Add(this.InputTextLabel2);
             this.InputFormPanel.Controls.Add(this.TextFieldBack3);
             this.InputFormPanel.Controls.Add(this.TextFieldBack2);
-            this.InputFormPanel.Location = new System.Drawing.Point(269, 9);
+            this.InputFormPanel.Location = new System.Drawing.Point(244, 9);
             this.InputFormPanel.Name = "InputFormPanel";
             this.InputFormPanel.Size = new System.Drawing.Size(250, 162);
             this.InputFormPanel.TabIndex = 14;
@@ -899,7 +900,7 @@
             this.InputTextField4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(2)))), ((int)(((byte)(8)))));
             this.InputTextField4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.InputTextField4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.InputTextField4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(158)))), ((int)(((byte)(32)))));
+            this.InputTextField4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(230)))), ((int)(((byte)(38)))));
             this.InputTextField4.Location = new System.Drawing.Point(137, 123);
             this.InputTextField4.MaxLength = 128;
             this.InputTextField4.Name = "InputTextField4";
@@ -928,7 +929,7 @@
             this.InputTextField1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(2)))), ((int)(((byte)(8)))));
             this.InputTextField1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.InputTextField1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.InputTextField1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(158)))), ((int)(((byte)(32)))));
+            this.InputTextField1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(230)))), ((int)(((byte)(38)))));
             this.InputTextField1.Location = new System.Drawing.Point(137, 41);
             this.InputTextField1.MaxLength = 128;
             this.InputTextField1.Name = "InputTextField1";
@@ -964,7 +965,7 @@
             this.InputTextField2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(2)))), ((int)(((byte)(8)))));
             this.InputTextField2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.InputTextField2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.InputTextField2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(158)))), ((int)(((byte)(32)))));
+            this.InputTextField2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(230)))), ((int)(((byte)(38)))));
             this.InputTextField2.Location = new System.Drawing.Point(137, 65);
             this.InputTextField2.MaxLength = 128;
             this.InputTextField2.Name = "InputTextField2";
@@ -991,7 +992,7 @@
             this.InputTextField3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(2)))), ((int)(((byte)(8)))));
             this.InputTextField3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.InputTextField3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.InputTextField3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(158)))), ((int)(((byte)(32)))));
+            this.InputTextField3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(230)))), ((int)(((byte)(38)))));
             this.InputTextField3.Location = new System.Drawing.Point(137, 94);
             this.InputTextField3.MaxLength = 128;
             this.InputTextField3.Name = "InputTextField3";
@@ -1069,7 +1070,7 @@
             this.panel2.Controls.Add(this.Asquare);
             this.panel2.Location = new System.Drawing.Point(6, 9);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(246, 260);
+            this.panel2.Size = new System.Drawing.Size(230, 260);
             this.panel2.TabIndex = 1;
             // 
             // AdvancedLabel
@@ -1175,7 +1176,7 @@
             this.Aparellelogram.ForeColor = System.Drawing.Color.Gainsboro;
             this.Aparellelogram.Location = new System.Drawing.Point(110, 122);
             this.Aparellelogram.Name = "Aparellelogram";
-            this.Aparellelogram.Size = new System.Drawing.Size(125, 26);
+            this.Aparellelogram.Size = new System.Drawing.Size(111, 26);
             this.Aparellelogram.TabIndex = 6;
             this.Aparellelogram.Text = "Parellelogram";
             this.Aparellelogram.UseVisualStyleBackColor = false;
@@ -1192,7 +1193,7 @@
             this.Atrapezoid.ForeColor = System.Drawing.Color.Gainsboro;
             this.Atrapezoid.Location = new System.Drawing.Point(110, 90);
             this.Atrapezoid.Name = "Atrapezoid";
-            this.Atrapezoid.Size = new System.Drawing.Size(125, 26);
+            this.Atrapezoid.Size = new System.Drawing.Size(111, 26);
             this.Atrapezoid.TabIndex = 5;
             this.Atrapezoid.Text = "Trapezoid";
             this.Atrapezoid.UseVisualStyleBackColor = false;
@@ -1209,7 +1210,7 @@
             this.Arectangle.ForeColor = System.Drawing.Color.Gainsboro;
             this.Arectangle.Location = new System.Drawing.Point(110, 57);
             this.Arectangle.Name = "Arectangle";
-            this.Arectangle.Size = new System.Drawing.Size(125, 26);
+            this.Arectangle.Size = new System.Drawing.Size(111, 26);
             this.Arectangle.TabIndex = 4;
             this.Arectangle.Text = "Rectangle";
             this.Arectangle.UseVisualStyleBackColor = false;
@@ -1257,7 +1258,7 @@
             this.AreaLabel.ForeColor = System.Drawing.Color.Silver;
             this.AreaLabel.Location = new System.Drawing.Point(0, 0);
             this.AreaLabel.Name = "AreaLabel";
-            this.AreaLabel.Size = new System.Drawing.Size(246, 24);
+            this.AreaLabel.Size = new System.Drawing.Size(230, 24);
             this.AreaLabel.TabIndex = 1;
             this.AreaLabel.Text = "AREA COMPUTING";
             this.AreaLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1284,13 +1285,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(2)))), ((int)(((byte)(8)))));
-            this.ClientSize = new System.Drawing.Size(795, 469);
+            this.ClientSize = new System.Drawing.Size(718, 465);
             this.Controls.Add(this.TitlePanel);
             this.Controls.Add(this.MainWindowPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainUI";
-            this.Opacity = 0.8D;
+            this.Opacity = 0.96D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DvNET MATH PRO";
             this.Load += new System.EventHandler(this.MainUI_Load);
@@ -1371,7 +1372,7 @@
         private System.Windows.Forms.Label VersionLabel;
         private System.Windows.Forms.TextBox OutputTextField;
         private System.Windows.Forms.Label BuildLabel;
-        private System.Windows.Forms.Label Memory;
+        private System.Windows.Forms.TextBox Memory;
         private System.Windows.Forms.Label CopyTextLabel;
         private System.Windows.Forms.Button Sforce;
         private System.Windows.Forms.Button Smass;

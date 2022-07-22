@@ -39,8 +39,8 @@ namespace DvNET_Math_Pro
         private void MainUI_Load(object sender, EventArgs e)
         {
             Title.Text = "             MATH PRO  " + Main.GetVersion() + "        ";
-            Copyright.Text = "Copyright © " + Main.GetYear() + " M.P.Dewnith Fernando. All rights reserved.";
-            VersionLabel.Text = "DvNET MATH PRO " + Main.GetVersion(); ;
+            Copyright.Text = "Copyright © " + Main.GetYear() + " Dewnith Fernando. All rights reserved.";
+            VersionLabel.Text = "MATH PRO " + Main.GetVersion(); ;
             BuildLabel.Text = "Build " + Main.GetBuild();
         }
 
@@ -319,7 +319,7 @@ namespace DvNET_Math_Pro
 
         private void SubmitBtn_Click(object sender, EventArgs e)
         {
-            OutputTextFieldBack.BackColor = Color.FromArgb(12, 198, 100);
+            OutputTextFieldBack.BackColor = Color.FromArgb(62, 209, 24);
             try
             {
                 OutputTextField.Text = "";
@@ -628,8 +628,8 @@ namespace DvNET_Math_Pro
         }
 
         /***************************                         *  PUBLIC FUNCTIONS  *                            *************************/
-        public void Print(string Text) { OutputTextFieldBack.BackColor = Color.FromArgb(12, 100, 198); OutputTextField.ForeColor = Color.FromArgb(10, 150, 40); OutputTextField.Text += Text; OutputTextFieldBack.BackColor = Color.FromArgb(20,24,50); }
-        public void Printerr(string Text) { OutputTextField.ForeColor = Color.FromArgb(175, 32, 32); OutputTextField.Text = Text; }
+        public void Print(string Text) { OutputTextFieldBack.BackColor = Color.FromArgb(12, 100, 198); OutputTextField.ForeColor = Color.FromArgb(62, 209, 24); OutputTextField.Text += Text; OutputTextFieldBack.BackColor = Color.FromArgb(20,24,50); }
+        public void Printerr(string Text) { OutputTextField.ForeColor = Color.FromArgb(241, 0, 0); OutputTextField.Text = Text; }
         public void Submit() { SubmitBtn.Enabled = true; OutputTextCopyBtn.Enabled = false; OutputTextClearBtn.Enabled = false; }
         public void xSubmit() { SubmitBtn.Enabled = false; OutputTextCopyBtn.Enabled = true; OutputTextClearBtn.Enabled = true; }
         /*******************************************************************************************************************************/

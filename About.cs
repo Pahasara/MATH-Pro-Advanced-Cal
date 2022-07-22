@@ -26,7 +26,6 @@ namespace DvNET_Math_Pro
 
         private void About_Load(object sender, EventArgs e)
         {
-            CopyrightLabel.Text = "Copyright © " + Main.GetYear() + " M.P.Dewnith Fernando. All rights reserved.";
             VER.Text = Main.GetVersion(); ;
             BUILD.Text = "Build " + Main.GetBuild();
         }
