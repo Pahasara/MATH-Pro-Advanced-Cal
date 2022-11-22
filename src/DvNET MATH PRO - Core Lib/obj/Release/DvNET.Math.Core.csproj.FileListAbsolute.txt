@@ -1,0 +1,11 @@
+D:\Workspaces\Visual Studio\C#.NET\DvNET Math Pro\bin\DvNET.MATH.Core.dll
+D:\Workspaces\Visual Studio\C#.NET\DvNET Math Pro\bin\DvNET.MATH.Core.pdb
+D:\Workspaces\Visual Studio\C#.NET\DvNET Math Pro\DvNET MATH PRO - Core Lib\obj\Release\DvNET.Math.Core.csprojAssemblyReference.cache
+D:\Workspaces\Visual Studio\C#.NET\DvNET Math Pro\DvNET MATH PRO - Core Lib\obj\Release\DvNET.MATH.Core.dll
+D:\Workspaces\Visual Studio\C#.NET\DvNET Math Pro\DvNET MATH PRO - Core Lib\obj\Release\DvNET.MATH.Core.pdb
+D:\Workspaces\Visual Studio\DvNET Math Pro\bin\DvNET.MATH.Core.dll
+D:\Workspaces\Visual Studio\DvNET Math Pro\bin\DvNET.MATH.Core.pdb
+D:\Workspaces\Visual Studio\DvNET Math Pro\DvNET MATH PRO - Core Lib\obj\Release\DvNET.Math.Core.csprojAssemblyReference.cache
+D:\Workspaces\Visual Studio\DvNET Math Pro\DvNET MATH PRO - Core Lib\obj\Release\DvNET.MATH.Core.dll
+D:\Workspaces\Visual Studio\DvNET Math Pro\DvNET MATH PRO - Core Lib\obj\Release\DvNET.MATH.Core.pdb
+D:\Workspaces\Visual Studio\DvNET Math Pro\DvNET MATH PRO - Core Lib\obj\Release\DvNET.Math.Core.csproj.CoreCompileInputs.cache
